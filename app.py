@@ -6,7 +6,7 @@ from flask import Flask, request, app, jsonify
 app = Flask('__name__')
 
 #Loading pickle file containing the trained ML model
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('models/model.pkl', 'rb'))
 
 #Creating an api
 @app.route('/predict_api', methods=['POST'])
