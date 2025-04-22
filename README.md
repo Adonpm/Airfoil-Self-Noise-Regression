@@ -19,7 +19,7 @@ The dataset comprises different size NACA 0012 airfoils at various wind tunnel s
 - `data/`: Contains the dataset files.
 - `notebooks/`: Jupyter notebooks for data exploration and model development.
 - `models/`: Trained machine learning models.
-- `app/`: Flask application for deploying the model as an API.
+- `app.py`: Flask application for deploying the model as an API.
 - `requirements.txt`: List of Python dependencies.
 - `README.md`: Project documentation.
 
