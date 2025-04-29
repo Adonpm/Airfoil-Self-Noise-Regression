@@ -48,20 +48,21 @@ pip install -r requirements.txt
 
 Usage
 
+Data Exploration and Model Training
 
-Data Exploration and Model Training: Use the Jupyter notebooks in the notebooks/ directory to explore the data and train machine learning models.
+Use the Jupyter notebooks in the notebooks/ directory to explore the data and train machine learning models. We evaluated several algorithms, including Linear Regression, Decision Tree, Elastic Net, Ridge Regression, and Random Forest, to determine the best model based on accuracy scores. The Random Forest model was selected as the best-fit model due to its superior performance.
 
 
+Model Deployment
 
-Model Deployment: The Flask application in the app/ directory can be used to deploy the trained model as an API. Run the application using:
+The Flask application in the app.py file can be used to deploy the trained model as an API. Run the application using:
 
 
 python app.py
 
+API Usage
 
-API Usage: Send a POST request to the /predict_api endpoint with the required input features to get predictions.
-
-
+Send a POST request to the /predict_api endpoint with the required input features to get predictions.
 
 
 Contributing
