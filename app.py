@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from flask import Flask, request, app, jsonify, url_for, render_template
 
-app = Flask('__name__')
+app = Flask(__name__)
 
 #Loading pickle file containing the trained ML model
 model = pickle.load(open('models/model.pkl', 'rb'))
