@@ -18,17 +18,36 @@ The dataset comprises different size NACA 0012 airfoils at various wind tunnel s
 
 ## Project Structure
 
-- `.github/workflows/`: Contains GitHub Actions CI/CD workflows.
-- `data/`: Contains the dataset files.
-- `models/`: Trained machine learning models.
-- `notebooks/`: Jupyter notebooks for data exploration and model development.
-- `templates/`: HTML templates for Flask UI.
-- `.dockerignore`: Files/folders ignored in Docker builds.
-- `.gitignore`: Files/folders ignored by Git.
-- `app.py`: Flask app for serving the model via API.
-- `Dockerfile`: Used to containerize the app.
-- `README.md`: Project documentation.
-- `requirements.txt`: List of Python dependencies.
+```
+airfoil-self-noise-regression/
+│
+├── .githhub/workflows
+│   └── main.yml                                                # CI/CD pipeline for deployment
+│
+├── data/
+│   └──airfoil_self_noise.dat                                   # Dataset used for training the model
+│
+├── models/
+│   └── model.pkl                                               # Trained Random Forest model
+│
+├── notebooks/
+│   └── Airfoil_Model_Creation_and_Serialization.ipynb          # Notebook for data exploration and model development
+│
+├── templates/
+│   └── home.html                                               # Frontend HTML template
+│
+├── .dockerignore                                               # Files/folders ignored in Docker builds
+│
+├── .gitignore                                                  # Files/folders ignored by Git
+│
+├── app.py                                                      # Flask application
+│
+├── Dockerfile                                                  # Docker containerization file
+│
+├── README.md                                                   # Project documentation (this file)
+│
+└── requirements.txt                                            # Python dependencies
+```
 
 ## Prerequisites
 
