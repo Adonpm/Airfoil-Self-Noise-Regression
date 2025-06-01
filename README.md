@@ -2,6 +2,8 @@
 
 This project involves the analysis and prediction of airfoil self-noise using a dataset provided by NASA. The dataset was obtained from a series of aerodynamic and acoustic tests of two and three-dimensional airfoil blade sections conducted in an anechoic wind tunnel.
 
+**Live Demo:** Try the app online at [airfoil-app.onrender.com](https://airfoil-self-noise-regression.onrender.com/)
+
 ## Dataset Information
 
 - **Source**: NASA
@@ -117,18 +119,14 @@ This project is containerized using Docker for easy deployment and scalability.
 - **CI/CD Pipeline**: The GitHub repository is integrated with a CI/CD pipeline that automates testing, building, and deploying the application whenever code is pushed.
 - **Render**: The app is deployed live on Render, enabling easy sharing and real-time use of the application.
 
-### 🔗 Live App
-
-You can try the live version here: [airfoil-app.onrender.com](https://airfoil-self-noise-regression.onrender.com/)
-
-### Contributing
+## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
 
-### License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Acknowledgments
+## Acknowledgments
 
 NASA for providing the dataset.
