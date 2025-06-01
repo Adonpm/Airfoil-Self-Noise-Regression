@@ -1,0 +1,26 @@
+name: Deploy to render
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+
+            - name: Log in to Dockerhub (Skipping for now)
+              if: false
+              run: echo "Skipping docker login"
+
+            - name: Build docker image
+              run: docker build -t airfoil_app:v1 .
+
+            - name: Deploy trigger
+              run: curl -X POST https://api.render.com/deploy/srv-d0u9bq3ipnbc738lm6i0?key=$RENDER_API_KEY
+              env: 
+                RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
